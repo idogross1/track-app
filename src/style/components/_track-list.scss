@@ -1,0 +1,79 @@
+.track-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+
+  .tracks-container {
+    &.list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+    }
+    &.tile {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 1rem;
+      row-gap: 2.5rem;
+      justify-content: space-between;
+    }
+  }
+
+  .track-list-btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    button {
+      border: 3px solid $clr2;
+      background-color: $clr2;
+      padding: 0 16px;
+      border-radius: 4px;
+      width: 64px;
+      height: 32px;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.5s;
+      font-size: 1.2rem;
+
+      &:hover {
+        border: 3px solid $clr3;
+        background-color: $clr3;
+      }
+    }
+    .navigation {
+      display: flex;
+      column-gap: 0.5rem;
+      .next-btn {
+        &::before {
+          content: '\f061';
+          font-family: Awesome;
+        }
+      }
+
+      .prev-btn {
+        &::before {
+          content: '\f060';
+          font-family: Awesome;
+        }
+      }
+    }
+    .views {
+      display: flex;
+      column-gap: 0.5rem;
+      .list {
+        &::before {
+          content: '\f0ca';
+          font-family: Awesome;
+        }
+      }
+
+      .tile {
+        &::before {
+          content: '\f00a';
+          font-family: Awesome;
+        }
+      }
+    }
+  }
+}

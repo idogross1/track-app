@@ -1,0 +1,30 @@
+.track-image-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+  row-gap: 1rem;
+  h2 {
+  }
+  .img-continer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 55%;
+    cursor: pointer;
+    img {
+    }
+  }
+
+  .player-wrapper {
+    // position: relative;
+    // padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+
+    .react-player {
+      //   position: absolute;
+      //   bottom: 0;
+      //   left: 0;
+    }
+  }
+}

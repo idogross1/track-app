@@ -1,0 +1,38 @@
+header {
+  height: 5rem;
+  font-size: 1.5rem;
+
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      font-family: Monton;
+      font-size: 2rem;
+
+      &::before {
+        font-family: Awesome;
+        content: '\f8d9';
+        font-size: 2.25rem;
+        margin-right: 0.75rem;
+        color: $clr2;
+      }
+    }
+
+    .navigation {
+      display: flex;
+      column-gap: 0.5rem;
+
+      & > * {
+        text-decoration: none;
+        color: $clr5;
+        transition: all 0.5s;
+
+        &:hover {
+          color: $clr3;
+        }
+      }
+    }
+  }
+}
