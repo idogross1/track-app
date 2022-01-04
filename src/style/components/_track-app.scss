@@ -1,21 +1,4 @@
-.track-list--enter {
-  opacity: 0;
-  background-color: red;
-}
-.track-list-enter--active {
-  opacity: 1;
-  transition: opacity 10s;
-  background-color: red;
-}
-.track-list-enter--done {
-  background-color: red;
-}
-.track-list--exit {
-  opacity: 1;
-}
-.track-list--exit-active {
-  opacity: 0;
-  transition: opacity 1s;
-}
-.track-list--exit-done {
+.track-app {
+  display: flex;
+  flex-direction: column;
 }

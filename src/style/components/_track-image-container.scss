@@ -1,12 +1,11 @@
 .track-image-container {
   display: flex;
   flex-direction: column;
-  align-self: center;
-  justify-self: center;
   row-gap: 1rem;
   h2 {
+    text-align: center;
   }
-  .img-continer {
+  .img-container {
     display: flex;
     align-items: center;
     justify-content: center;

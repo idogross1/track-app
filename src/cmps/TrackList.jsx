@@ -3,7 +3,7 @@ import { useState } from 'react'
 export const TrackList = ({ tracks, onSetPage, page, onTrack }) => {
   const [view, setView] = useState('list')
 
-  if (!tracks) return <h1>Loading...</h1>
+  if (!tracks) return <h3 className="initial-msg">Listen to your music</h3>
 
   return (
     <section className="track-list">

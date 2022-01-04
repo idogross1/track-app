@@ -1,7 +1,10 @@
 const INITIAL_STATE = {
   tracks: [],
   currTrack: null,
-  filterBy: null,
+  filterBy: {
+    q: '',
+    view: 'list',
+  },
   page: 0,
   recentSearches: [],
 }

@@ -1,7 +1,6 @@
 import { useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { getRecentSearches } from '../store/actions/trackActions'
+import { getRecentSearches, setFilterBy, loadTracks } from '../store/actions/trackActions'
 
 export const RecentSearches = () => {
   const { recentSearches } = useSelector((state) => state.trackModule)
@@ -11,12 +10,18 @@ export const RecentSearches = () => {
     dispatch(getRecentSearches())
   }, [])
 
+  const onSearchTerm = (rs) => {
+    dispatch(setFilterBy(rs))
+    dispatch(loadTracks())
+  }
+
   return (
-    <section className="main-layout recent-searches">
+    <section className="recent-searches">
+      <h2>Recent searches:</h2>
       {recentSearches.map((rs) => (
-        <Link className="search-term" key={rs._id} to={`/track/${rs.q}/${rs.view}`}>
+        <p className="search-term" key={rs._id} onClick={() => onSearchTerm(rs)}>
           {rs.q}
-        </Link>
+        </p>
       ))}
     </section>
   )

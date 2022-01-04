@@ -6,11 +6,13 @@ export const TrackPreview = ({ track, view, onTrack }) => {
     return track.pictures.large
   }
 
+  const trackName = (name) => (name.length > 50 ? name.slice(0, 50) + '...' : name)
+
   return (
     <div className={`track-preview ${view}`} onClick={() => onTrack(track, view)}>
       <img className="track-img" src={getPicture()} alt="img" />
       <div className="track-details">
-        <p className="track-name">{track.name}</p>
+        <p className="track-name">{trackName(track.name)}</p>
         <p className="track-artist">by {track.user.name}</p>
         <div className="track-info">
           <span className="play-count">{track.play_count}</span>
