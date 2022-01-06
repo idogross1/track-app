@@ -11,15 +11,17 @@ export const TrackPreview = ({ track, view, onTrack }) => {
   return (
     <div className={`track-preview ${view}`} onClick={() => onTrack(track, view)}>
       <img className="track-img" src={getPicture()} alt="img" />
-      <div className="track-details">
-        <p className="track-name">{trackName(track.name)}</p>
-        <p className="track-artist">by {track.user.name}</p>
-        <div className="track-info">
-          <span className="play-count">{track.play_count}</span>
-          <span className="audio-length">{parseSeconds(track.audio_length)}</span>
-          <span className="created-time">{parseISO(track.created_time)}</span>
+      {view === 'list' && (
+        <div className="track-details">
+          <p className="track-name">{trackName(track.name)}</p>
+          <p className="track-artist">by {track.user.name}</p>
+          <div className="track-info">
+            <span className="play-count">{track.play_count}</span>
+            <span className="audio-length">{parseSeconds(track.audio_length)}</span>
+            <span className="created-time">{parseISO(track.created_time)}</span>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   )
 }

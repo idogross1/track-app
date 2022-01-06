@@ -5,7 +5,6 @@ import { getRecentSearches, setFilterBy, loadTracks } from '../store/actions/tra
 export const RecentSearches = () => {
   const { recentSearches } = useSelector((state) => state.trackModule)
   const dispatch = useDispatch()
-
   useEffect(() => {
     dispatch(getRecentSearches())
   }, [])
