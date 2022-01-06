@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/track-app/static/css/main.7e5c7431.css",
-    "main.js": "/track-app/static/js/main.f13ffd53.js",
+    "main.css": "/track-app/static/css/main.1ed2a883.css",
+    "main.js": "/track-app/static/js/main.08926fbe.js",
     "static/js/787.774729bc.chunk.js": "/track-app/static/js/787.774729bc.chunk.js",
     "static/media/fa-regular.ttf": "/track-app/static/media/fa-regular.7d2d3552d100ebff6fab.ttf",
     "static/media/Monoton-Regular.ttf": "/track-app/static/media/Monoton-Regular.7dedae9293901010ebba.ttf",
     "static/media/mixcloud-font.woff2": "/track-app/static/media/mixcloud-font.b50824fe4ff335be8c64.woff2",
     "index.html": "/track-app/index.html",
-    "main.7e5c7431.css.map": "/track-app/static/css/main.7e5c7431.css.map",
-    "main.f13ffd53.js.map": "/track-app/static/js/main.f13ffd53.js.map",
+    "static/media/image.svg": "/track-app/static/media/image.3d96d6caf3a5d2910e2ea9b414a7024c.svg",
+    "main.1ed2a883.css.map": "/track-app/static/css/main.1ed2a883.css.map",
+    "main.08926fbe.js.map": "/track-app/static/js/main.08926fbe.js.map",
     "787.774729bc.chunk.js.map": "/track-app/static/js/787.774729bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e5c7431.css",
-    "static/js/main.f13ffd53.js"
+    "static/css/main.1ed2a883.css",
+    "static/js/main.08926fbe.js"
   ]
 }
